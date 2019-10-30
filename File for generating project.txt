@@ -1,0 +1,23 @@
+cd D:
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/Vivado/2018.3/bin
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/Vivado_HLS/2018.3/bin
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/SDK/2018.3/bin
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/SDK/2018.3/gnu/microblaze/nt/bin
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/SDK/2018.3/gnu/arm/nt/bin
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/SDK/2018.3/gnu/microblaze/linux_toolchain/nt64_be/bin
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/SDK/2018.3/gnu/microblaze/linux_toolchain/nt64_le/bin
+export PATH=$PATH:/cygdrive/d/Vivado_2018.3/SDk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin
+which vivado
+alias xmd=xmd.bat
+alias xsct=xsct.bat
+alias xsdb=xsdb.bat
+mkdir adi
+cd adi
+git clone https://github.com/analogdevicesinc/hdl.git
+cd hdl/
+git status 
+git checkout hdl_2018_r2 
+git fetch
+git rebase origin/hdl_2018_r2
+cd projects/fmcomms2/zed/
+make
