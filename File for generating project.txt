@@ -1,3 +1,6 @@
+Use CYGWIN for Windows to download Linux files.
+Commands for CYGWIN : 
+
 cd D:
 export PATH=$PATH:/cygdrive/d/Vivado_2018.3/Vivado/2018.3/bin
 export PATH=$PATH:/cygdrive/d/Vivado_2018.3/Vivado_HLS/2018.3/bin
